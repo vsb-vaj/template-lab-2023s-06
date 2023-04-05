@@ -5,7 +5,7 @@ function Numbers(props) {
   // TODO: is this component the owner of the color state?
   const [color, setColor] = useState(props.color);
 
-  return <h2 style={{ color: color }}>{props.numbers}</h2>;
+  return <h2 style={{ color: color }}>{JSON.stringify(props.numbers)}</h2>;
 }
 
 // No need to change this component
